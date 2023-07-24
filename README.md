@@ -6,4 +6,12 @@ It is recommended that you keep the repo/package name the same, but if you do ch
 
 
 write this command to control the robot with ros2 control:
+
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+
+write this command to launch SLAM file : 
+
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/my_bot/config/mapper_params_online_async.yaml use_sim_time:=true
+
+
+
